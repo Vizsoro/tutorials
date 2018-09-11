@@ -6,8 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+
 import com.baeldung.springbootmvc.model.Todo;
 
+@Component
 public class TodoDao implements Dao<Todo> {
 	
 	private Map<Integer,Todo> todoMap = new HashMap<>();
@@ -23,7 +26,7 @@ public class TodoDao implements Dao<Todo> {
 	}
 	
 	@Override
-	public long save(Todo todo) {
+	public int save(Todo todo) {
 		todoMap.put(todoMap.size(), todo);
 		return todoMap.size()-1;
 	}

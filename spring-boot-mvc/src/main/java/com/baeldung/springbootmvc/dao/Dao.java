@@ -11,7 +11,7 @@ public interface Dao<T> {
 	
 	Collection<Todo> getAll();
 	
-	long save(T t);
+	int save(T t);
 	
 	void update(int id, T t);
 	
