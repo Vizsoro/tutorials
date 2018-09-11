@@ -1,4 +1,4 @@
-package com.baeldung.springbootmvc;
+package com.baeldung.springbootmvc.controller;
 
 import javax.validation.Valid;
 

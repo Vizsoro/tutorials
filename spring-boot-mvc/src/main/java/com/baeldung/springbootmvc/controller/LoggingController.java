@@ -1,4 +1,4 @@
-package com.baeldung.springbootmvc;
+package com.baeldung.springbootmvc.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

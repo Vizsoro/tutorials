@@ -1,4 +1,4 @@
-package com.baeldung.springbootmvc;
+package com.baeldung.springbootmvc.controller;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import com.baeldung.springbootmvc.SpringBootMvcApplication;
 import com.baeldung.springbootmvc.config.CustomMessageSourceConfiguration;
 
 @RunWith(SpringRunner.class)
