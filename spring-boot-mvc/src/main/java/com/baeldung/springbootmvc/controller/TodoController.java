@@ -1,5 +1,7 @@
 package com.baeldung.springbootmvc.controller;
 
+import java.time.LocalDateTime;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,6 +18,7 @@ public class TodoController {
 	@GetMapping(value= "/todo")
 	public String home(Model model) {
 		logger.info("todo endpoint triggered.");
+		model.addAttribute("systemTime", LocalDateTime.now());
 		return "todo";
 	}
 }
