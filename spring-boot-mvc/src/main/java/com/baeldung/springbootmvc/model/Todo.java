@@ -2,10 +2,13 @@ package com.baeldung.springbootmvc.model;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class Todo {
 	
 	 private String message;
 	 private int priority;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	 private LocalDate deadline;
 	
 	public String getMessage() {
